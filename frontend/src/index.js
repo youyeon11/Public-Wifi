@@ -1,16 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./Header"; // Header 컴포넌트 import
-import Main from "./Main"; // Main 컴포넌트 import
 
-function App() {
+const IndexPage = () => {
     return (
         <div>
-            <h1>와이파이 정보 구하기</h1>
-            <Header />
-            <Main />
+            {/* Example header section */}
+            <header>
+                <h1>Welcome to the React Version</h1>
+            </header>
+
+            {/* Example main section */}
+            <main>
+                <p>This is the main content area.</p>
+            </main>
+
+            {/* Example footer section */}
+            <footer>
+                <p>&copy; 2025 Your Company. All rights reserved.</p>
+            </footer>
         </div>
     );
-}
+};
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+export default IndexPage;

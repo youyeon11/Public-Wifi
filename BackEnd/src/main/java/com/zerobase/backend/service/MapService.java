@@ -16,8 +16,16 @@ public class MapService {
     @Transactional
     public List<WifiResponseDto> searchWifi(Double latitute, Double longtitute) {
 
+        return null;
     }
 
     // 거리 환산
-
+    private Double distanceCalculator(
+            Double x1,
+            Double y1,
+            Double x2,
+            Double y2
+    ) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    }
 }
